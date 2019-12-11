@@ -5982,6 +5982,7 @@ $$</p>
 <p>Why do we require that $w_{ii} = 0$ for all $1 \le i \le n$?</p>
 </blockquote>
 <p>This is consistent with the fact that the shortest path from a vertex to itself is the empty path of weight $0$. If there were another path of weight less than $0$ then it must be a negative-weight cycle, since it starts and ends at $v_i$.</p>
+<p>If $w_{ii} \ne 0$, then $L^{(1)}$ produced after the first run of $\text{EXTEND-SHORTEST-PATHS}$ would not contain the minimum weight of any path from $i$ to its neighbours. If $w_{ii} = 0$, then in line 7 of $\text{EXTEND-SHORTEST-PATHS}$, the second argument to $min$ would not equal the weight of the edge going from $i$ to its neighbours.</p>
 <h2 id="251-3">25.1-3</h2>
 <blockquote>
 <p>What does the matrix</p>
@@ -5997,7 +5998,7 @@ L^{(0)} =
 $$</p>
 <p>used in the shortest-paths algorithms correspond to in regular matrix multiplication?</p>
 </blockquote>
-<p>(Removed)</p>
+<p>The identity matrix.</p>
 <h2 id="251-4">25.1-4</h2>
 <blockquote>
 <p>Show that matrix multiplication defined by $\text{EXTEND-SHORTEST-PATHS}$ is associative.</p>

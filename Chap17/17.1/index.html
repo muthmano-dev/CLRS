@@ -5798,8 +5798,8 @@
   &amp; =   \sum_{i = 1}^{\left\lceil\lg n\right\rceil} 2^i + \sum_{i \le n \text{ is not a power of } 2} 1 \\
   &amp; \le \sum_{i = 1}^{\left\lceil\lg n\right\rceil} 2^i + n \\
   &amp; =   2^{1 + \left\lceil\lg n\right\rceil} - 1 + n \\
-  &amp; \le 4n - 1 + n \\
-  &amp; \le 5n \in O(n).
+  &amp; \le 2n - 1 + n \\
+  &amp; \le 3n \in O(n).
 \end{aligned}
 $$</p>
 <p>To find the average, we divide by $n$, and the amortized cost per operation is $O(1)$.</p>
